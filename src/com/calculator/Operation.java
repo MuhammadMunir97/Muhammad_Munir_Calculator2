@@ -1,13 +1,13 @@
 package com.calculator;
 
 public interface Operation {
-	public double getResults(double operandOne, double operandTwo);
+	public Double getResults(Double operandOne, Double operandTwo);
 }
 
 class plus implements Operation{
 
 	@Override
-	public double getResults(double operandOne, double operandTwo) {
+	public Double getResults(Double operandOne, Double operandTwo) {
 		return operandOne + operandTwo;
 	}
 	
@@ -15,7 +15,7 @@ class plus implements Operation{
 class subtract implements Operation{
 
 	@Override
-	public double getResults(double operandOne, double operandTwo) {
+	public Double getResults(Double operandOne, Double operandTwo) {
 		return operandOne - operandTwo;
 	}
 	
@@ -23,7 +23,7 @@ class subtract implements Operation{
 class multiply implements Operation{
 
 	@Override
-	public double getResults(double operandOne, double operandTwo) {
+	public Double getResults(Double operandOne, Double operandTwo) {
 		return operandOne * operandTwo;
 	}
 	
@@ -31,8 +31,8 @@ class multiply implements Operation{
 class divide implements Operation{
 
 	@Override
-	public double getResults(double operandOne, double operandTwo) {
-		return operandOne / operandTwo;
+	public Double getResults(Double operandOne, Double operandTwo) {
+		return operandTwo / operandOne;
 	}
 	
 }
