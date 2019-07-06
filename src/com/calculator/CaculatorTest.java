@@ -5,7 +5,7 @@ public class CaculatorTest {
 	public static void main(String[] args) {
 		
 		DataInput data = new DataInput();
-		PerformCalculation method = new simplePrecedence();
+		PerformCalculation method = new SimplePrecedence();
 		data.setOrderOfPrecedence(method);
 		
 		data.performOperation(20.0);
